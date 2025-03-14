@@ -63,8 +63,7 @@ node scripts/Generate_Update_Studio_Flow.js "" "ZSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 Replace `ZSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX` with your Twilio Serverless Service SID.
 - To update an existing Studio Flow, provide the Flow SID as the first argument.
 
-You can also run the script _without_ providing the Serverless Service SID, if it has already been included in the `sample-studio-trigger-parameters.json`.
-
+You can also run the script **without** providing the Serverless Service SID, if it has already been included in the `sample-studio-trigger-parameters.json`.
 ```sh
 node scripts/Generate_Update_Studio_Flow.js
 ```
@@ -123,11 +122,11 @@ curl -X POST "http://localhost:2000/make-soap-request" \
 | `.env` variables not loading | Run `export $(grep -v '^#' .env | xargs)` before running the script |
 | `Error: username is required` | Ensure Twilio credentials (`ACCOUNT_SID`, `API_KEY`, `API_SECRET`) are correctly set in `.env` |
 | `Flow validation failed` | Log validation response (`JSON.stringify(validationData, null, 2)`) to debug issues |
-| `Serverless deployment failed` | Install a compatible `@twilio/runtime-handler` version (`npm install @twilio/runtime-handler@2.0.1` and update package.json to specific version (e.g.: replace `ˆ2.0.1` by `2.0.1`)) |
+| `Serverless deployment failed` | Install a compatible `@twilio/runtime-handler` version (`npm install @twilio/runtime-handler@2.0.1` and update package.json to specific version (e.g., replace `^2.0.1` with `2.0.1`)) |
 
-## Twilio Studio CI / CD
-For a more advanced management of Studio Flows and Serverless Functions, please refer to this official guide:
-https://www.twilio.com/code-exchange/studio-github-actions 
+## Twilio Studio CI/CD
+For a more advanced management of Studio Flows and Serverless Functions, refer to the official guide:
+[Twilio Code Exchange - Studio GitHub Actions](https://www.twilio.com/code-exchange/studio-github-actions)
 
 ## License
 This project is licensed under the MIT License.
