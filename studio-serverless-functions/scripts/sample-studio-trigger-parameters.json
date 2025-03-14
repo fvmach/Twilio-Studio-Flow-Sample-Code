@@ -1,0 +1,24 @@
+{
+    "flowSid": "",
+    "serviceSid": "",
+    "parameters": {
+      "user_id": "user_123",
+      "full_name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone_number": "+15551234567",
+      "flight_number": "TW123",
+      "departure_airport": "JFK",
+      "arrival_airport": "LHR",
+      "departure_time": "2025-06-15T14:30:00Z",
+      "arrival_time": "2025-06-15T20:30:00Z",
+      "landing_terminal": "Terminal 3",
+      "seat_number": "12A",
+      "airline": "Air Twilio",
+      "bonus_program_tier": "Gold",
+      "current_bonus_points": 25000,
+      "eligible_upgrades": ["Lounge Access", "Extra Baggage"],
+      "special_meal_request": "Vegetarian",
+      "flight_status": "On Time"
+    }
+  }
+  

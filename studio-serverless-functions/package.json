@@ -1,0 +1,22 @@
+{
+  "name": "studio-serverless-functions",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "twilio-run",
+    "deploy": "twilio-run deploy"
+  },
+  "dependencies": {
+    "@twilio/runtime-handler": "2.0.1",
+    "node-fetch": "^3.3.2",
+    "twilio": "5.0.3",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "twilio-run": "^4.0.3"
+  },
+  "engines": {
+    "node": "18"
+  }
+}
